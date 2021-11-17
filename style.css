@@ -1,0 +1,22 @@
+body{
+    width: 980px;
+    padding-inline: 10px;
+    margin: 0 auto;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1400px;
+    height: 230px;
+    background-color: #dcdcdc;
+
+}
+.fnumber{
+    font-family: 'Open Sans Condensed';
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #767676;
+}
