@@ -1,16 +1,26 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@font-face {
+    font-family: Open Sans Condensed; /* Гарнитура шрифта */
+    src: url(fonts/open-sans-condensed-v15-latin/open-sans-condensed-v15-latin-300.ttf); /* Путь к файлу со шрифтом */
+}
+
+
+
+.container{
     width: 980px;
     padding-inline: 10px;
     margin: 0 auto;
 }
-.container{
+header{
+    background-color: #dcdcdc;
+    padding-top: 51px;
+    padding-left: 15px;
+    padding-bottom: 61px;
+}
+.header-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1400px;
-    height: 230px;
-    background-color: #dcdcdc;
-
 }
 .fnumber{
     font-family: 'Open Sans Condensed';
@@ -19,4 +29,17 @@ body{
     font-weight: 300;
     letter-spacing: 0.025em;
     color: #767676;
+    padding-bottom: 5px;
+    margin-right: -1px;
+}
+.menu{
+    font-family: "PT Sans", sans-serif;
+    background-color: #777777;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #FFFFFF;
 }
