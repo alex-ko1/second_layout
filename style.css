@@ -3,7 +3,15 @@
     font-family: Open Sans Condensed; /* Гарнитура шрифта */
     src: url(fonts/open-sans-condensed-v15-latin/open-sans-condensed-v15-latin-300.ttf); /* Путь к файлу со шрифтом */
 }
-
+body{
+    font-family: 'PT Sans'; 
+    height: 100%;   
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 .container{
     width: 980px;
     padding-inline: 10px;
@@ -13,7 +21,7 @@ header{
     background-color: #dcdcdc;
     padding-top: 51px;
     padding-left: 15px;
-    padding-bottom: 61px;
+    padding-bottom: 60px;
 }
 .header-wrapper{
     display: flex;
@@ -34,11 +42,11 @@ header{
     background-color: #777777;
     justify-content: space-between;
     text-align: center;
-   
+    margin-bottom: -15px;
+    padding: 15px 0 26px 14px;
 
-    padding-top: 18px;
-    padding-left: 14px;
-    padding-bottom: 26px;
+    position: relative;
+    z-index: 100;
 }
 .list{
     margin: 0px;
@@ -61,10 +69,85 @@ span{
 a{ 
 	text-decoration: none; /* Убираем подчеркивание у ссылок */
 	color: #FFFFFF; /* Цвет ссылки */
+    text-decoration-skip-ink: none;
 }
 a:hover { 
   text-decoration: underline; /* Добавляем подчеркивание при наведении курсора мыши на ссылку */
+
 }
+
 .slider{
     text-align: center;
+    margin-top: -62px;
+    padding-left: 27px;
+}
+section{
+    display: flex;
+    margin-top: 25px;
+    flex: 1 1 auto;
+}
+.news{
+    background-color: #777777;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    margin-bottom: 18px;
+    margin-left: 8px;
+    color: #FFFFFF;
+
+}
+ul{
+    list-style: none;
+    padding-left: 34px;
+    padding-top: 3px;
+    margin-right: 43px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    gap:59px;
+}
+h1{
+    font-size: 40px;
+    margin-top: 24px;
+    padding-left: 34px;
+    padding-right: 169px;
+}
+.pnews{
+    margin-top: 0px;
+}
+.archive{
+    padding-right: 52px;
+    margin-top: 34px;
+    text-align: right;
+}
+.h1company{
+    font-size: 40px;
+    margin-top: 22px;
+    padding: 0;
+    font-weight:0;
+    margin-bottom: 31px;
+}
+.company{
+    font-family: 'PT Sans';
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #767676;
+}
+.pcompany{
+    margin-bottom: 22px;
+}
+footer{
+    background-color: #777777;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list_menu{
+    list-style:none;
+
 }
