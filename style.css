@@ -3,14 +3,21 @@
     font-family: Open Sans Condensed; /* Гарнитура шрифта */
     src: url(fonts/open-sans-condensed-v15-latin/open-sans-condensed-v15-latin-300.ttf); /* Путь к файлу со шрифтом */
 }
-body{
+html,body{
     font-family: 'PT Sans'; 
     height: 100%;   
 }
-.wrapper{
-    min-height: 100%;
+body{
+    margin:0px;
     display: flex;
     flex-direction: column;
+}
+.wrapper{
+    flex:1 0 auto;
+}
+.footer{
+    flex-shrink: 0;
+
 }
 .container{
     width: 980px;
@@ -23,9 +30,11 @@ header{
     padding-left: 15px;
     padding-bottom: 60px;
 }
+.logo{
+    margin: 14px 0 0 -8px;
+}
 .header-wrapper{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 .fnumber{
@@ -35,15 +44,16 @@ header{
     font-weight: 300;
     letter-spacing: 0.025em;
     color: #767676;
-    padding-bottom: 5px;
-    margin-right: -1px;
+    margin: 5px 7px 0 0;
+    float: right;
+    margin-left: auto;
 }
 .menu{
     background-color: #777777;
     justify-content: space-between;
     text-align: center;
     margin-bottom: -15px;
-    padding: 15px 0 26px 14px;
+    padding: 15px 0 26px 7px;
 
     position: relative;
     z-index: 100;
@@ -78,40 +88,46 @@ a:hover {
 
 .slider{
     text-align: center;
-    margin-top: -62px;
-    padding-left: 27px;
+    margin: -62px 0 0 11px;
+    position: relative;
+    z-index: -100;
+
 }
 section{
     display: flex;
     margin-top: 25px;
     flex: 1 1 auto;
 }
+.content{
+    display: flex;
+    justify-content: space-between;
+    gap:59px;
+    margin-left: -8px;
+    margin-bottom: 195px;
+    height: auto;
+}
 .news{
     background-color: #777777;
     font-size: 14px;
     line-height: 22px;
     letter-spacing: 0.025em;
-    margin-bottom: 18px;
     margin-left: 8px;
     color: #FFFFFF;
+    height: auto;
+    padding: 1px 0 101px 0;
 
-}
-ul{
-    list-style: none;
-    padding-left: 34px;
-    padding-top: 3px;
-    margin-right: 43px;
-}
-.content{
-    display: flex;
-    justify-content: space-between;
-    gap:59px;
 }
 h1{
     font-size: 40px;
     margin-top: 24px;
     padding-left: 34px;
     padding-right: 169px;
+}
+ul{
+    list-style: none;
+    padding-left: 34px;
+    padding-top: 3px;
+    margin-right: 43px;
 }
 .pnews{
     margin-top: 0px;
@@ -120,6 +136,15 @@ h1{
     padding-right: 52px;
     margin-top: 34px;
     text-align: right;
+}
+ul li p a{
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    text-decoration-skip-ink: none;
+}
+section a{
+    text-decoration: underline;
+    color: #FFFFFF; /* Цвет ссылки */
+    text-decoration-skip-ink: none;
 }
 .h1company{
     font-size: 40px;
@@ -135,19 +160,54 @@ h1{
     font-weight: 400;
     letter-spacing: 0.025em;
     color: #767676;
+    
 }
 .pcompany{
     margin-bottom: 22px;
 }
 footer{
     background-color: #777777;
+    color: #FFFFFF;    
+    font-size: 14px;
 }
 .footer-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 75px;
 }
-.list_menu{
+.email{
+    margin-top: -20px;
+}
+footer ul{
+    padding: 0px;
+    margin: 42px 0px -27px 0;
+ 
+}
+footer ul li{
     list-style:none;
+    display: block;
+    text-decoration: underline;
+    
+    font-family: 'PT Sans';font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.025em;
+}
+a.f-menu{
+    color: #FFFFFF; /* Цвет ссылки */
+    text-decoration-skip-ink: none;
+}
+footer img{
+    width: 36px;height: 38px;
+    margin-top: 5px;
+}
+.End{
+    display: flex;
+    gap:10px;
+    padding-right: 17px;
+    padding-bottom: 0px;
 
+}
+footer p{
+    margin-top: 0px;
 }
